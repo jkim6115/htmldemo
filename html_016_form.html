@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        form : 서버로 요소를 보내기 위한 요소 작성
+        method : 256바이트 미만, 보안이 필요 없을 때 사용
+        post : 256바이트 초과, 보인이 필요 할 때 사용
+        enctype :  전송할 데이터에 첨부파일이 없을 때 
+                   기본값 : application/x-www-form-urlencoded
+                   첨부파일 있을 때
+                   기본값 : multipart/form-data
+        fieldset : 다수의 form을 그룹화
+        legend : form 요소 그룹의 제목 지정
+        label : text와 form요소의 상관관계 설정
+        for속성 : 속성 값을 포커스로 이동 설정
+    -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>로그인</legend>
+        <label for="fid">아이디</label>
+        <input type="text" name="fid" id="fid" />
+        <label for="fpass">비밀번호</label>
+        <input type="password" name="fpass" id="fpass" />
+      </fieldset>
+      <input type="submit" value="로그인" />
+    </form>
+
+    <form action="#" method="get">
+      <fieldset>
+        <legend>로그인</legend>
+        <input
+          type="text"
+          name="fid"
+          id="fid"
+          placeholder="아이디 입력"
+          maxlength="5"
+        />
+        <input
+          type="password"
+          name="fpass"
+          id="fpass"
+          placeholder="비밀번호 입력"
+        />
+      </fieldset>
+      <input type="submit" value="로그인" />
+    </form>
+  </body>
+</html>
